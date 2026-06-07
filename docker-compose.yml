@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      # Sincroniza tu código local con el contenedor en tiempo real
+      - .:/app
+      # Evita que tu node_modules local sobrescriba el de Linux
+      - /app/node_modules
+    environment:
+      # Obligatorio para que Vite detecte cambios de archivos en Docker
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true
