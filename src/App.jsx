@@ -16,7 +16,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Clase GIT -- Arquitectura de Coputadores</h1>
+          <h1>Primera pagina web clase de arquitectura de computadores</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
