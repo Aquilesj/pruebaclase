@@ -3,8 +3,9 @@ version: '3.8'
 services:
   web:
     build: .
+    # Mapea el puerto 80 externo al 5173 interno de Vite
     ports:
-      - "5173:5173"
+      - "80:5173"
     volumes:
       # Sincroniza tu código local con el contenedor en tiempo real
       - .:/app
